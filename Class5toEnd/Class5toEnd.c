@@ -626,20 +626,252 @@
 //	// struct person X = { "홍길동", 20, 'M' };
 //}
 
-// 구조체 멤버의 참조 예 1
-#include <stdio.h>
+//// 구조체 멤버의 참조 예 1
+//#include <stdio.h>
+//#include <string.h>
+//struct person {
+//	char name[8];
+//	int age;
+//	char sex;
+//};
+//void main() {
+//	struct person X = { "홍길동", 30, 'M' };
+//	struct person Y;
+//	strcpy(Y.name, "임꺽정");
+//	Y.age = 35;
+//	Y.sex = 'M';
+//	printf("X의 정보 : %s, %d, %c\n", X.name, X.age, X.sex);
+//	printf("Y의 정보 : %s, %d, %c\n", Y.name, Y.age, Y.sex);
+//}
+
+
+
+// 13강 파일 처리 함수 1
+
+// 파일 입력 예시
+//#include <stdio.h>
+//#pragma warning(disable:4996)
+//
+//void main() {
+//	char ch;
+//	FILE* fp;
+//	fp = fopen("sample.txt", "w"); // write, read, add
+//	for (ch = 'A'; ch <= 'Z'; ch++)
+//		fputc(ch, fp);
+//	fclose(fp);
+//}
+
+
+// 파일 열기/닫기 사용 예
+//#include <stdio.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	FILE* fp1, * fp2;
+//	fp1 = fopen("c:\\users\\kay\\documents\\text.txt", "w");
+//	fp2 = fopen("c:\\source\\test.c", "r");
+//	if ((fp2 = fopen("C:\\source\\test.c", "r")) == NULL) {
+//		puts("파일을 열 수 없음!");
+//		exit(1);
+//	}
+//	fclose(fp1);
+//	fclose(fp2);
+//}
+
+
+// 14강 파일 처리 함수 2
+// 순차파일 - putc() 함수의 사용 예
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//
+//void main() {
+//	FILE* fp;
+//	char c;
+//	fp = fopen("sample1.dat", "w");
+//	if (fp == NULL) {
+//		printf("파일을 개방할 수 없습니다!");
+//		exit(1);
+//	}
+//	while ((c = getchar()) != EOF)  //EOF = Ctrl+Z
+//		putc(c, fp);
+//	fclose(fp);
+//}
+
+
+// fput() 함수의 사용 예
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
+//#pragma warning(disable:4996)
+//
+//void main() {
+//	char name[64];
+//	FILE* fp;
+//	if ((fp = fopen("sample2.dat", "w")) == NULL) {
+//		puts("파일을 개방할 수 없습니다!");
+//		exit(1);
+//	}
+//	gets(name);
+//	while (strcmp(name, "end")) { //strcmp 두 문자열 비교
+//		strcat(name, "\n"); //하나의 문자열 길이가 일정하지 않으므로 구분 목적으로 \n 추가
+//							//strcat 두 문자열 붙이기
+//		fputs(name, fp);
+//		gets(name);
+//	}
+//	fclose(fp);
+//}
+
+//fprintf() 함수
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//
+//void main() {
+//	FILE* fp;
+//	char no[10], name[10];
+//	int mid, term, rep, att, i;
+//	fp = fopen("sample3.dat", "w");
+//	if (fp == NULL) {
+//		printf("파일을 개방할 수 없습니다!");
+//		exit(1);
+//	}
+//	fprintf(stdout, "학번 이름 중간 기말 레포트 출석 점수를 입력\n");
+//	for (i = 0; i < 5; ++i) {
+//		scanf("%s %s %d %d %d %d", no, name, &mid, &term, &rep, &att);
+//		fprintf(fp,"%10s %8s %3d %3d %3d %3d \n", no, name, mid, term, rep, att);
+//	} //지정된 형식으로 파일에 자료를 저장
+//	fclose(fp);
+//}
+
+// getc() 함수
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	FILE* fp;
+//	char c;
+//	fp = fopen("sample1.dat", "r");
+//	if (fp == NULL) {
+//		printf("파일을 개방할 수 없습니다!");
+//		exit(1);
+//	}
+//	while ((c = getc(fp)) != EOF)
+//		putchar(c);
+//	fclose(fp);
+//}
+
+// fgets()함수 - 문자열 길이 명시 해야함(null값 포함하여 +1)
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	char name[20];
+//	FILE* fp;
+//	if ((fp = fopen("sample2.dat", "r")) == NULL) {
+//		puts("파일을 개방할 수 없습니다!");
+//		exit(1);
+//	}
+//	while (fgets(name, 20, fp) != NULL)
+//		printf("%s", name);
+//	fclose(fp);
+//}
+
+// fscanf()함수 - 주로 파일의 끝을 판별하는 feof() 함수와 함께 사용
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	FILE* fp;
+//	char no[10], name[10];
+//	int mid, term, rep, att;
+//	fp = fopen("sample3.dat", "r");
+//	if (fp == NULL) {
+//		printf("파일을 개방할 수 없습니다.");
+//		exit(1);
+//	}
+//	printf("학번 이름 중간 기말 리포트 출석\n");
+//	while (!feof(fp)) {
+//		fscanf(fp, "%10s %8s %3d %3d %3d %3d\n",
+//			no, name, &mid, &term, &rep, &att);
+//		printf("%10s %8s %4d %4d %4d %4d\n",
+//			no, name, mid, term, rep, att);
+//	}
+//}
+
+
+// 레코드 추가의 사용 예
+//#include <stdio.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	FILE* fp;
+//	fp = fopen("sample4.dat", "a");
+//	fputs("Cho DS\n", fp);
+//	fputs("Han JK\n", fp);
+//	fputs("Kang MH\n", fp);
+//	fclose(fp);
+//}
+
+// 순차파일 끝 ~ 랜덤파일 시작
+
+// fwrite() 함수
+/*#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-struct person {
-	char name[8];
-	int age;
-	char sex;
-};
+#pragma warning(disable:4996)
 void main() {
-	struct person X = { "홍길동", 30, 'M' };
-	struct person Y;
-	strcpy(Y.name, "임꺽정");
-	Y.age = 35;
-	Y.sex = 'M';
-	printf("X의 정보 : %s, %d, %c\n", X.name, X.age, X.sex);
-	printf("Y의 정보 : %s, %d, %c\n", Y.name, Y.age, Y.sex);
-}
+	FILE* fp;
+	char name[10];
+	if((fp = fopen("sample5.dat", "wb")) == NULL) {
+		puts("파일을 개방할 수 없습니다!");
+		exit(1);
+	}
+	gets(name);
+	while(strcmp(name, "end")) {
+		fwrite(name, 10, 1, fp);
+		gets(name);
+	}
+	fclose(fp);
+}*/
+
+// fread() 함수
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	FILE* fp;
+//	char name[10];
+//	if ((fp = fopen("sample5.dat", "rb")) == NULL) {
+//		puts("파일을 개방할 수 없습니다!");
+//		exit(1);
+//	}
+//	while (1) {
+//		if (fread(name, 10, 1, fp) != 1) //fread(읽을 자료 변수, 레코드 길이, 레코드 개수, 파일 포인터)
+//				break;
+//		puts(name);
+//	}
+//	fclose(fp);
+//}
+
+// fseek() 함수 - 파일 포인터를 임의의 위치로 이동시키고, 랜덤파일의 특정 부분을 입/출력
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+////SEEK_CUR 특정 위치로 이동 , SEEK_SET 기본 위치 셋팅, SEEK_END 파일의 마지막 끝 기준
+//void main() {
+//	char str[10];
+//	FILE* fp = fopen("sample6.txt", "wt");
+//	fputs("1234567890", fp);
+//	fclose(fp);
+//	fp = fopen("sample6.txt", "rt");
+//	fseek(fp, 7, SEEK_SET); //파일의 시작 위치를 시작(1) 에서 7만큼 이동한 위치(8)로 셋팅
+//	fgets(str, 4, fp); //8부터 3글자 출력(null포함 시 4글자), 출력 이후 커서는 끝에 남음
+//	printf("7번째부터 3글자 출력 : %s \n", str); //890 출력
+//	fseek(fp, -2, SEEK_CUR); // 커서 위치 앞으로 2칸 옮김(0뒤->8뒤(9))
+//	fgets(str, 3, fp); // 9에서 2글자 출력
+//	printf("현재 위치에서 앞에 2글자부터 2글자 출력 : %s \n", str); //90 출력
+//	fseek(fp, -9, SEEK_END); // 맨 뒤 기준 앞으로 9칸 이동(0뒤 -> 1뒤)
+//	fgets(str, 6, fp); // 1뒤(2)부터 5글자 출력
+//	printf("맨 뒤에서 9번째 앞부터 5글자 출력 : %s \n", str); // 23456 출력
+//	fclose(fp);
+//}

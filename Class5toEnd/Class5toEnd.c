@@ -875,3 +875,153 @@ void main() {
 //	printf("맨 뒤에서 9번째 앞부터 5글자 출력 : %s \n", str); // 23456 출력
 //	fclose(fp);
 //}
+
+
+
+// 15강 메모리 동적 할당
+
+
+// 메모리 정적 할당의 예
+//#include <stdio.h>
+//void test1(int);
+//void test2(int);
+//int a = 100;
+//void main() {
+//   int b = a;
+//   test1(b);
+//   test2(b);
+//}
+//void test1(int c) {
+//   int d;
+//   d = c + 10;
+//   printf("%d", d);
+//}
+//void test2(int e) {
+//   int f;
+//   f = e + 20;
+//   printf("%d", f);
+//}
+
+
+// 메모리 정적 할당의 문제점 예
+//#include <stdio.h>
+//void main(void) {
+//   int size;
+//   char a[size];   // 오류 발생(정적 할당으로 인해 size값이 초기화되지 않으면 오류)
+//   printf("입력할 주소의 문자열 크기는 ? \n");
+//   scanf("%d", &size);
+//   printf("주소 입력 : ");
+//   scanf("%s", a);
+//   printf("입력된 주소는 %s입니다. \n", a);
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//void main(void) {
+//   int size;
+//   char *a;   // 오류 발생(정적 할당으로 인해 size값이 초기화되지 않으면 오류)
+//   printf("입력할 주소의 문자열 크기는 ? \n");
+//   scanf("%d", &size);
+//   a = (char*)malloc(sizeof(char)*size); // 메모리 동적 할당
+//   printf("주소 입력 : ");
+//   scanf("%s", a);
+//   printf("입력된 주소는 %s입니다. \n", a);
+//   free(a);
+//}
+
+
+// 메모리 동적 할당의 예 1
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	int* a;
+//	a = (int a)malloc(sizeof(int));
+//	if (a == NULL) {
+//		puts("기억 공간 할당 실패!");
+//		exit(1);
+//	}
+//	*a = 20;
+//	printf("힙에 저장된 변수 a : %d\n", *a);
+//	free(a);
+//
+//}
+
+
+// 메모리 동적 할당의 예 2
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	int size;
+//	char* str;
+//	printf("문자열의 크기를 입력하세요 : ");
+//	scanf("%d", &size);
+//	str = (char*)malloc(size + 1);  //memory allocation --> 기억공간을 초기화하지 않음
+//	if (str == NULL) {
+//		puts("기억공간 할당 실패!");
+//		exit(1);
+//	}
+//	printf("문자열을 입력하세요 : ");
+//	scanf("%s", str); // 동적으로 할당된 기억공간(str)에 문자열 저장
+//	printf("동적 할당된 메모리에 저장된 문자열 : %s\n", str);
+//	free(str);
+//}
+
+
+// calloc() 함수의 사용 예 --> 기억 공간을 0으로 초기화
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//void main() {
+//	int i;
+//	int* a;
+//	a = (int*)calloc(5, sizeof(int));
+//	a = (int*)realloc(a, 10 * sizeof(int)); // realloc()함수는 기억 공간의 크기를 재할당
+//	for (i = 0; i < 5; i++) {
+//		printf("%d\n", a[i]);
+//	}
+//	free(a);
+//}
+
+
+// memcmp() 함수의 사용 예   memory compare
+//#include <stdio.h>
+//#include <memory.h>
+//void main() {
+//	char* s1 = "aaa";
+//	char* s2 = "bbb";
+//	int stat;
+//	stat = memcmp(s1, s2, 3); //s1과 s2를 3바이트만큼 비교해서 그 결과가 stat에 저장
+//	printf("%d", stat);
+//}
+
+
+// memcpy() 함수의 사용 예 memory copy
+//#include <stdio.h>
+//#include <memory.h>
+//#include <string.h>
+//void main() {
+//	char src[] = "12304567890";
+//	char dest[] = "abcdefghijklmnopqrstuvwxyz";
+//	char* stat;
+//	printf("memcpy() 실행 전 dest의 데이터 : %s\n", dest);
+//	stat = (char*)memcpy(dest, src, strlen(src)); // memcpy() -> src에서 src의 길이만큼 dest에 복사
+//	if (stat)
+//		printf("memcpy() 실행 후 dest의 데이터 : %s\n", dest);
+//	else
+//		printf("복사 실패\n");
+//}
+
+
+// memset() 함수의 사용 예 memory setting
+//#include <stdio.h>
+//#include <memory.h>
+//#include <string.h>
+//void main() {
+//	char s[] = "1230567890";
+//	printf("memset() 실행 전 s의 데이터 : %s\n", s);
+//	memset(s, '*', strlen(s)); // 포인터 s가 가리키고 있는 곳을, '*'라는 기호로 s의 길이만큼 채운다
+//	printf("memset() 실행 후 s의 데이터 : %s\n", s);
+//}

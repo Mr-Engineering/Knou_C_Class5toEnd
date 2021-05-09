@@ -1,8 +1,8 @@
-// 6°­
-// ÇÔ¼ö
+// 6ê°•
+// í•¨ìˆ˜
 
 
-// #include <math.h>°¡ ÇÊ¼öÀÓ - ¼öÇĞ ¿¬»ê
+// #include <math.h>ê°€ í•„ìˆ˜ì„ - ìˆ˜í•™ ì—°ì‚°
 
 //#include <stdio.h>
 //#include <math.h>
@@ -23,49 +23,49 @@
 //}
 
 
-//#include <string.h>°¡ ÇÊ¼öÀÓ-¹®ÀÚ¿­Ã³¸®
-//#include <ctype.h>°¡ ÇÊ¼öÀÓ-¹®ÀÚÇüÅÂ ÆÇº°
+//#include <string.h>ê°€ í•„ìˆ˜ì„-ë¬¸ìì—´ì²˜ë¦¬
+//#include <ctype.h>ê°€ í•„ìˆ˜ì„-ë¬¸ìí˜•íƒœ íŒë³„
 //#include <stdio.h>
 //#include <string.h>
 //#include <ctype.h>
 //void main() {
 //	int i, alp=0, no = 0, et = 0;
 //	char s[20];
-//	printf("¹®ÀÚ");
+//	printf("ë¬¸ì");
 //	scanf("%s", s);
-//	for (i = 0; i < strlen(s); i++) { //strlen() ¹®ÀÚ¿­ ±æÀÌ ÇÔ¼ö
-//		if (isalpha(s[i])) // isalpha() ¿µ¹®ÀÚ ¿©ºÎ È®ÀÎ ÇÔ¼ö
+//	for (i = 0; i < strlen(s); i++) { //strlen() ë¬¸ìì—´ ê¸¸ì´ í•¨ìˆ˜
+//		if (isalpha(s[i])) // isalpha() ì˜ë¬¸ì ì—¬ë¶€ í™•ì¸ í•¨ìˆ˜
 //			alp++;
-//		else if (isdigit(s[i])) // isdigit() ¼ıÀÚ ¿©ºÎ È®ÀÎ ÇÔ¼ö
+//		else if (isdigit(s[i])) // isdigit() ìˆ«ì ì—¬ë¶€ í™•ì¸ í•¨ìˆ˜
 //			no++;
 //		else
 //			et++;
 //	}
-//	printf("¾ËÆÄºª = %d\n", alp);
-//	printf("¼ıÀÚ = %d\n", no);
-//	printf("±âÅ¸ = %d\n", et);
+//	printf("ì•ŒíŒŒë²³ = %d\n", alp);
+//	printf("ìˆ«ì = %d\n", no);
+//	printf("ê¸°íƒ€ = %d\n", et);
 //}
 
 
-//»ç¿ëÀÚ Á¤ÀÇ ÇÔ¼ö
+//ì‚¬ìš©ì ì •ì˜ í•¨ìˆ˜
 //#include <stdio.h>
-//int sum(int_a, int_b); // 1) ÇÔ¼öÀÇ ¿øÇü ¼±¾ğ
+//int sum(int_a, int_b); // 1) í•¨ìˆ˜ì˜ ì›í˜• ì„ ì–¸
 //void main() {
 //		int x, y, c;
 //	scanf("%d %d", &x, &y);
 //
-//	c = sum(10, 20); // 2) ÇÔ¼öÀÇ È£Ãâ
+//	c = sum(10, 20); // 2) í•¨ìˆ˜ì˜ í˜¸ì¶œ
 //	printf("%d\n", c);
 //	printf("x+y = %d", sum(x, y));
 //}
-// int sum(int a, int b) {   //3) ÇÔ¼öÀÇ Á¤ÀÇ - »ı·«ÇÒ °æ¿ì ¹İÈ¯°ªÀÌ ÀÖÀ¸¸é int, ¾øÀ¸¸é void
+// int sum(int a, int b) {   //3) í•¨ìˆ˜ì˜ ì •ì˜ - ìƒëµí•  ê²½ìš° ë°˜í™˜ê°’ì´ ìˆìœ¼ë©´ int, ì—†ìœ¼ë©´ void
 //	 int d;
 //	 d = a + b;
 //	 return(d);
 // }
 
 
-// Return¹® »ç¿ë ¿¹½Ã
+// Returnë¬¸ ì‚¬ìš© ì˜ˆì‹œ
 //#include <stdio.h>
 //int max(int x, int y);
 //int min(int x, int y);
@@ -86,7 +86,7 @@
 
 
 
-// ÇÔ¼öÀÇ ¿©·¯ °¡Áö »ç¿ë ¿¹
+// í•¨ìˆ˜ì˜ ì—¬ëŸ¬ ê°€ì§€ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //int sum(int, int);
 //test();
@@ -99,7 +99,7 @@
 //	printf("sum from 100 to 200 = %d\n", sum(100, 200));
 //}
 //test() {
-//	printf("ÇÔ¼öÀÇ ¿©·¯ °¡Áö »ç¿ë ¹æ¹ı\n");
+//	printf("í•¨ìˆ˜ì˜ ì—¬ëŸ¬ ê°€ì§€ ì‚¬ìš© ë°©ë²•\n");
 //}
 //int sum(int a, int b) {
 //	int i, s = 0;
@@ -110,45 +110,45 @@
 
 
 
-// 7°­
+// 7ê°•
 
-// ¸Å°³º¯¼ö »çÀÌÀÇ ÀÚ·á Àü´Ş - °ª¿¡ ÀÇÇÑ ÀÚ·á Àü´Ş
+// ë§¤ê°œë³€ìˆ˜ ì‚¬ì´ì˜ ìë£Œ ì „ë‹¬ - ê°’ì— ì˜í•œ ìë£Œ ì „ë‹¬
 //#include <stdio.h>
 //void swap(int x, int y);
 //void main() {
 //	int a = 3, b = 5;
-//	printf("È£Ãâ Àü a = %d, b = %d\n", a, b);
+//	printf("í˜¸ì¶œ ì „ a = %d, b = %d\n", a, b);
 //	swap(a, b);
-//	printf("È£Ãâ ÈÄ a = %d, b = %d\n", a, b);
+//	printf("í˜¸ì¶œ í›„ a = %d, b = %d\n", a, b);
 //}
 //void swap(int x, int y) {
 //	int temp;
 //	temp = x;
 //	x = y;
 //	y = temp;
-//	printf("ÇÔ¼ö ³» x = %d, y = %d\n", x, y);
+//	printf("í•¨ìˆ˜ ë‚´ x = %d, y = %d\n", x, y);
 //}
 
 
-// ¸Å°³º¯¼ö »çÀÌÀÇ ÀÚ·á Àü´Ş - ÂüÁ¶¿¡ ÀÇÇÑ ÀÚ·á Àü´Ş
+// ë§¤ê°œë³€ìˆ˜ ì‚¬ì´ì˜ ìë£Œ ì „ë‹¬ - ì°¸ì¡°ì— ì˜í•œ ìë£Œ ì „ë‹¬
 //#include <stdio.h>
 //void swap(int x, int y);
 //void main() {
 //	int a = 3, b = 5;
-//	printf("È£Ãâ Àü a = %d, b = %d\n", a, b);
+//	printf("í˜¸ì¶œ ì „ a = %d, b = %d\n", a, b);
 //	swap(&a, &b);
-//	printf("È£Ãâ ÈÄ a = %d, b = %d\n", a, b);
+//	printf("í˜¸ì¶œ í›„ a = %d, b = %d\n", a, b);
 //}
 //void swap(int *x, int *y) {
 //	int temp;
 //	temp = *x;
 //	*x = *y;
 //	*y = temp;
-//	printf("ÇÔ¼ö ³» x = %d, y = %d\n", *x, *y);
+//	printf("í•¨ìˆ˜ ë‚´ x = %d, y = %d\n", *x, *y);
 //}
 
 
-// Áö¿ªº¯¼ö »ç¿ë ¿¹ 1
+// ì§€ì—­ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ 1
 //#include <stdio.h>
 //void fcn1();
 //void main() {
@@ -164,68 +164,68 @@
 //}
 
 
-// Áö¿ªº¯¼ö »ç¿ë ¿¹ 2
+// ì§€ì—­ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ 2
 //#include <stdio.h>
 //void main() {
-//	//ºí·Ï A
+//	//ë¸”ë¡ A
 //	int x = 2, y = 4;
 //	printf("A: x=%d, y=%d\n", x, y);
-//	{//ºí·Ï B
-//		int x; // ºí·Ï B¿¡¼­ »õ·Ó°Ô ´Ù½Ã Á¤ÀÇ
+//	{//ë¸”ë¡ B
+//		int x; // ë¸”ë¡ Bì—ì„œ ìƒˆë¡­ê²Œ ë‹¤ì‹œ ì •ì˜
 //		x = 5;
-//		y++; // y´Â »õ·Ó°Ô Á¤ÀÇÇÏÁö ¾Ê¾ÒÀ¸¹Ç·Î ±×´ë·Î ¿¬»ê
+//		y++; // yëŠ” ìƒˆë¡­ê²Œ ì •ì˜í•˜ì§€ ì•Šì•˜ìœ¼ë¯€ë¡œ ê·¸ëŒ€ë¡œ ì—°ì‚°
 //		printf("B: x=%d, y=%d\n", x, y);
 //	}
 //	printf("A: x=%d, y=%d\n", x, y);
 //}
 
 
-// Àü¿ªº¯¼ö »ç¿ë ¿¹
+// ì „ì—­ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //void fcn1();
-//int x; //Àü¿ª º¯¼ö ¼±¾ğ
+//int x; //ì „ì—­ ë³€ìˆ˜ ì„ ì–¸
 //void main() {
 //	printf("\n 1) x = %d", x);
 //	fcn1();
 //	printf("\n 2) x = %d", x);
 //}
 //void fcn1() {
-//	x++; // Àü¿ª º¯¼ö »ç¿ë
+//	x++; // ì „ì—­ ë³€ìˆ˜ ì‚¬ìš©
 //}
 
-// ÀÚµ¿º¯¼ö »ç¿ë ¿¹ (auto, »ı·« °¡´É)
+// ìë™ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ (auto, ìƒëµ ê°€ëŠ¥)
 //#include <stdio.h>
 //void main() {
-//	int i = 1; //auto°¡ »ı·«µÇ¾îÀÖÀ½
+//	int i = 1; //autoê°€ ìƒëµë˜ì–´ìˆìŒ
 //	auto int j = 2;
-//	{//ºí·Ï1
+//	{//ë¸”ë¡1
 //		int i = 3;
-//		{//ºí·Ï2
+//		{//ë¸”ë¡2
 //			int i = 4;
-//			printf("ºí·Ï 2ÀÇ i = %d\n", i);
-//			printf("ºí·Ï 2ÀÇ j = %d\n", j);
+//			printf("ë¸”ë¡ 2ì˜ i = %d\n", i);
+//			printf("ë¸”ë¡ 2ì˜ j = %d\n", j);
 //		}
-//		printf("ºí·Ï 1ÀÇ i = %d\n", i);
+//		printf("ë¸”ë¡ 1ì˜ i = %d\n", i);
 //
 //	}
 //}
 
 
 
-// Á¤Àûº¯¼ö »ç¿ë ¿¹ 1
+// ì •ì ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ 1
 //#include <stdio.h>
 //void main() {
-//	int a = 10; // ÀÚµ¿ º¯¼ö
-//	static int b = 20; // Á¤Àûº¯¼ö
+//	int a = 10; // ìë™ ë³€ìˆ˜
+//	static int b = 20; // ì •ì ë³€ìˆ˜
 //	{
-//		int a = 5; // ºí·Ï ³»¿¡¼­¸¸ ÀÚµ¿ º¯¼ö º¯°æ
+//		int a = 5; // ë¸”ë¡ ë‚´ì—ì„œë§Œ ìë™ ë³€ìˆ˜ ë³€ê²½
 //		printf("a = %d b = %d\n", a, b);
 //
 //	}
 //	printf("a = %d b = %d\n", a, b);
 //}
 
-// Á¤Àûº¯¼ö »ç¿ë ¿¹ 2
+// ì •ì ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ 2
 //#include <stdio.h>
 //test();
 //void main() {
@@ -237,21 +237,21 @@
 //	}
 //}
 //test() {
-//	auto int a = 0; // ÀÚµ¿ º¯¼ö´Â È£ÃâµÉ ¶§¸¶´Ù °ªÀÌ ÃÊ±âÈ­ µÊ
-//	static int s = 0; // Á¤Àû º¯¼ö´Â ÇÔ¼ö¸¦ ºüÁ®³ª°¡µµ ±× °ªÀ» À¯Áö
+//	auto int a = 0; // ìë™ ë³€ìˆ˜ëŠ” í˜¸ì¶œë  ë•Œë§ˆë‹¤ ê°’ì´ ì´ˆê¸°í™” ë¨
+//	static int s = 0; // ì •ì  ë³€ìˆ˜ëŠ” í•¨ìˆ˜ë¥¼ ë¹ ì ¸ë‚˜ê°€ë„ ê·¸ ê°’ì„ ìœ ì§€
 //	printf("auto = %d, static = %d\n", a, s);
 //	++a;
 //	++s;
 //}
 
 
-// ¿ÜºÎº¯¼ö »ç¿ë ¿¹ 1
+// ì™¸ë¶€ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ 1
 //#include <stdio.h>
 //int i = 10;
 //int j = 20;
 //void main() {
-//	extern int i; // º¯¼ö i°¡ ÇÔ¼ö ¹Ù±ù¿¡ ÀÖÁö¸¸ ¸ÕÀú ¼±¾ğµÇ¾úÀ¸¹Ç·Î ÀüÃ¼¸¦ »ı·« °¡´É
-//	extern int k; // º¯¼ö k°¡ ÇÔ¼ö ¹Ù±ù¿¡ ÀÖÀ¸¹Ç·Î extern int k ±îÁö ²À ³Ö¾îÁà¾ß ÇÔ
+//	extern int i; // ë³€ìˆ˜ iê°€ í•¨ìˆ˜ ë°”ê¹¥ì— ìˆì§€ë§Œ ë¨¼ì € ì„ ì–¸ë˜ì—ˆìœ¼ë¯€ë¡œ ì „ì²´ë¥¼ ìƒëµ ê°€ëŠ¥
+//	extern int k; // ë³€ìˆ˜ kê°€ í•¨ìˆ˜ ë°”ê¹¥ì— ìˆìœ¼ë¯€ë¡œ extern int k ê¹Œì§€ ê¼­ ë„£ì–´ì¤˜ì•¼ í•¨
 //	int j = 100;
 //	printf("i = %d, j = %d, k = %d", i, j, k);
 //
@@ -259,26 +259,26 @@
 //int k = 50;
 
 
-//// ¿ÜºÎº¯¼ö »ç¿ë ¿¹ 2
+//// ì™¸ë¶€ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ 2
 //#include <stdio.h>
 //#pragma warning(disable:4996)
 //void extern_ex();
 //char s[100];
 //void main() {
-//	printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+//	printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 //	scanf("%s", s);
-//	printf("ÀÔ·Â ¹®ÀÚ¿­Àº %s´Â Àü¿ªº¯¼ö s¿¡ ÀúÀå\n", s);
+//	printf("ì…ë ¥ ë¬¸ìì—´ì€ %sëŠ” ì „ì—­ë³€ìˆ˜ sì— ì €ì¥\n", s);
 //	extern_ex();
 //}
 //
-//// µ¶¸³µÈ ÆÄÀÏ¿¡¼­µµ »ç¿ëÇÒ ¼ö ÀÖÀ½
+//// ë…ë¦½ëœ íŒŒì¼ì—ì„œë„ ì‚¬ìš©í•  ìˆ˜ ìˆìŒ
 //extern char s[];
 //void extern_ex() {
-//	printf("¿ÜºÎº¯¼ö s°ªÀº %sÀÔ´Ï´Ù. \n", s);
+//	printf("ì™¸ë¶€ë³€ìˆ˜ sê°’ì€ %sì…ë‹ˆë‹¤. \n", s);
 //}
 
 
-// ·¹Áö½ºÅÍ º¯¼ö »ç¿ë ¿¹ - ÀÚµ¿ º¯¼ö¿Í µ¿ÀÏÇÑ ±â´É, ¹İº¹ È½¼ö¸¦ Á¤ÀÇÇÏ´Â °æ¿ì CPU³» ·¹Áö½ºÅÍ°¡ ºü¸£°Ô ÀÌ º¯¼ö¸¦ ºÒ·¯¿Àµµ·Ï Á¤ÀÇ
+// ë ˆì§€ìŠ¤í„° ë³€ìˆ˜ ì‚¬ìš© ì˜ˆ - ìë™ ë³€ìˆ˜ì™€ ë™ì¼í•œ ê¸°ëŠ¥, ë°˜ë³µ íšŸìˆ˜ë¥¼ ì •ì˜í•˜ëŠ” ê²½ìš° CPUë‚´ ë ˆì§€ìŠ¤í„°ê°€ ë¹ ë¥´ê²Œ ì´ ë³€ìˆ˜ë¥¼ ë¶ˆëŸ¬ì˜¤ë„ë¡ ì •ì˜
 //#include <stdio.h>
 //void main() {
 //	register int i;
@@ -290,9 +290,9 @@
 //}
 
 
-// 8°­ ¹è¿­°ú Æ÷ÀÎÅÍ
+// 8ê°• ë°°ì—´ê³¼ í¬ì¸í„°
 
-// 1Â÷¿ø ¹è¿­ »ç¿ë ¿¹1
+// 1ì°¨ì› ë°°ì—´ ì‚¬ìš© ì˜ˆ1
 //#include <stdio.h>
 //void main() {
 //	int array1[4] = { 10,20,30,40 };
@@ -314,7 +314,7 @@
 //		printf("\n");
 //}
 
-// 1Â÷¿ø ¹è¿­ »ç¿ë ¿¹2
+// 1ì°¨ì› ë°°ì—´ ì‚¬ìš© ì˜ˆ2
 //#include <stdio.h>
 //void main() {
 //	static int x[] = { 1,2,3,4 };
@@ -322,12 +322,12 @@
 //	int i, z[4];
 //	for (i = 0; i < 4; ++i)
 //		z[i] = x[i] + y[3 - i];
-//	printf("¹İ´ë À§Ä¡ÀÇ ¹è¿­¿ä¼Ò ÇÕ\n");
+//	printf("ë°˜ëŒ€ ìœ„ì¹˜ì˜ ë°°ì—´ìš”ì†Œ í•©\n");
 //	for (i = 0; i < 4; ++i)
 //		printf("%d + %d = %d\n", x[i], y[3 - i], z[i]);
 //}
 
-// 2Â÷¿ø ¹è¿­ »ç¿ë ¿¹
+// 2ì°¨ì› ë°°ì—´ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	static int score[4][3] = { 
@@ -336,7 +336,7 @@
 //		{70,70,70}, 
 //		{60,60,60} };
 //	int sum, i, j;
-//	printf("¹øÈ£\t±¹¾î\t¼öÇĞ\t¿µ¾î\tÇÕ°è\n");
+//	printf("ë²ˆí˜¸\têµ­ì–´\tìˆ˜í•™\tì˜ì–´\tí•©ê³„\n");
 //	for (i = 0; i < 4; ++i) {
 //		sum = 0;
 //		printf("%3d", i + 1);
@@ -350,33 +350,33 @@
 //
 //}
 
-// charÇü ¹è¿­ÀÇ »ç¿ë ¿¹1
+// charí˜• ë°°ì—´ì˜ ì‚¬ìš© ì˜ˆ1
 //#include <stdio.h>
 //void main() {
 //	char name[] = "HONG GIL DONG";
 //	char adrs1[6] = { 'S', 'E', 'O', 'U', 'L', '\0' };
-//	char adrs2[6] = { 'S', 'E', 'O', 'U', 'L' }; // null°ªÀÌ ¾ø´Â ÀÚ¸®¿¡ ¾²·¹±â °ªÀÌ µé¾î¿Ã ¼ö ÀÖÀ½
+//	char adrs2[6] = { 'S', 'E', 'O', 'U', 'L' }; // nullê°’ì´ ì—†ëŠ” ìë¦¬ì— ì“°ë ˆê¸° ê°’ì´ ë“¤ì–´ì˜¬ ìˆ˜ ìˆìŒ
 //	printf("\n name : %s", name);
 //	printf("\n name : %s", adrs1);
 //	printf("\n name : %s", adrs2);
 //}
 
-// charÇü ¹è¿­ÀÇ »ç¿ë ¿¹2
+// charí˜• ë°°ì—´ì˜ ì‚¬ìš© ì˜ˆ2
 //#include <stdio.h>
 //void main() {
 //	char string[50];
 //	int i = 0;
-//	printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+//	printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 //	scanf("%s", string);
-//	printf("ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­ : %s\n", string);
-//	printf("¹®ÀÚ ´ÜÀ§ Ãâ·Â : ");
-//	while (string[i] != '\0') {  //scanfÇÔ¼ö¿¡ charÀÔ·Â ½Ã ¸¶Áö¸·¿¡ ÀÚµ¿À¸·Î null°ª ³ÖÀ½
+//	printf("ì…ë ¥ë°›ì€ ë¬¸ìì—´ : %s\n", string);
+//	printf("ë¬¸ì ë‹¨ìœ„ ì¶œë ¥ : ");
+//	while (string[i] != '\0') {  //scanfí•¨ìˆ˜ì— charì…ë ¥ ì‹œ ë§ˆì§€ë§‰ì— ìë™ìœ¼ë¡œ nullê°’ ë„£ìŒ
 //		printf("%c", string[i]); 
 //		i++;
 //	}
 //}
 
-// ¹è¿­À» ÇÔ¼öÀÇ ¸Å°³º¯¼ö·Î »ç¿ëÇÑ °æ¿ì
+// ë°°ì—´ì„ í•¨ìˆ˜ì˜ ë§¤ê°œë³€ìˆ˜ë¡œ ì‚¬ìš©í•œ ê²½ìš°
 //#include <stdio.h>
 //void score_sum(int gr[][5], int, int);
 //void main() {
@@ -394,22 +394,22 @@
 //	}
 //}
 
-// Æ÷ÀÎÅÍ - º¯¼öÀÇ ÁÖ¼Ò ¿¹
+// í¬ì¸í„° - ë³€ìˆ˜ì˜ ì£¼ì†Œ ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	int days = 365;
 //	int month = 12;
 //	int Table[5] = { 1,2,3,4,5 };
-//	printf("daysÀÇ ÁÖ¼Ò´Â %x\n", &days);
-//	printf("monthÀÇ ÁÖ¼Ò´Â %x\n", &month);
-//	printf("¹è¿­¸í TableÀÇ ÁÖ¼Ò´Â %x\n", Table);
-//	printf("¹è¿­¸í TableÀÇ Ã¹¹øÂ° ¿ä¼ÒÀÇ ÁÖ¼Ò´Â %x\n", &Table[0]);
-//	printf("¹è¿­¸í TableÀÇ µÎ¹øÂ° ¿ä¼ÒÀÇ ÁÖ¼Ò´Â %x\n", &Table[1]);
+//	printf("daysì˜ ì£¼ì†ŒëŠ” %x\n", &days);
+//	printf("monthì˜ ì£¼ì†ŒëŠ” %x\n", &month);
+//	printf("ë°°ì—´ëª… Tableì˜ ì£¼ì†ŒëŠ” %x\n", Table);
+//	printf("ë°°ì—´ëª… Tableì˜ ì²«ë²ˆì§¸ ìš”ì†Œì˜ ì£¼ì†ŒëŠ” %x\n", &Table[0]);
+//	printf("ë°°ì—´ëª… Tableì˜ ë‘ë²ˆì§¸ ìš”ì†Œì˜ ì£¼ì†ŒëŠ” %x\n", &Table[1]);
 //
 //}
 
 
-// Æ÷ÀÎÅÍº¯¼öÀÇ »ç¿ë ¿¹
+// í¬ì¸í„°ë³€ìˆ˜ì˜ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	int a, b;
@@ -417,13 +417,13 @@
 //	a = 5000;
 //	p = &a;
 //	b = *p;
-//	printf("a = %d\n", a); // º¯¼ö a
-//	printf("p = %x\n", p); // º¯¼ö aÀÇ ÁÖ¼Ò
-//	printf("b = %d\n", b); // º¯¼ö aÀÇ ÁÖ¼Ò¿¡ ÀÖ´Â °ªÀ» b¿¡ ÀÔ·Â
-//	printf("&b = %x\n", &b); // º¯¼ö bÀÇ ÁÖ¼Ò
+//	printf("a = %d\n", a); // ë³€ìˆ˜ a
+//	printf("p = %x\n", p); // ë³€ìˆ˜ aì˜ ì£¼ì†Œ
+//	printf("b = %d\n", b); // ë³€ìˆ˜ aì˜ ì£¼ì†Œì— ìˆëŠ” ê°’ì„ bì— ì…ë ¥
+//	printf("&b = %x\n", &b); // ë³€ìˆ˜ bì˜ ì£¼ì†Œ
 //}
 
-// Æ÷ÀÎÆ®º¯¼öÀÇ ÂüÁ¶ ¿¹
+// í¬ì¸íŠ¸ë³€ìˆ˜ì˜ ì°¸ì¡° ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	int *p, i = 3, j;
@@ -437,7 +437,7 @@
 //
 //}
 
-// voidÇü Æ÷ÀÎÅÍÀÇ »ç¿ë ¿¹
+// voidí˜• í¬ì¸í„°ì˜ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	int a = 100;
@@ -449,7 +449,7 @@
 //	printf("*p = %c\n", *(char*)p);
 //	}
 
-// Æ÷ÀÎÅÍ ¿¬»êÀÇ ¿¹ 1
+// í¬ì¸í„° ì—°ì‚°ì˜ ì˜ˆ 1
 //#include <stdio.h>
 //void main() {
 //	int* p, a[] = { 10,20,30,40,50 };
@@ -463,7 +463,7 @@
 //	printf("*p+2 == %d\n", *p + 2);
 //}
 
-// Æ÷ÀÎÅÍ ¿¬»êÀÇ ¿¹ 2
+// í¬ì¸í„° ì—°ì‚°ì˜ ì˜ˆ 2
 //#include <stdio.h>
 //void main() {
 //	int* p, * q;
@@ -480,9 +480,9 @@
 
 
 
-// 10°­ ¹è¿­°ú Æ÷ÀÎÅÍ 3
+// 10ê°• ë°°ì—´ê³¼ í¬ì¸í„° 3
 
-// charÇü Æ÷ÀÎÅÍ ¿¹½Ã
+// charí˜• í¬ì¸í„° ì˜ˆì‹œ
 //#include <stdio.h>
 //void main() {
 //	char* cp = "COMPUTER";
@@ -492,7 +492,7 @@
 //	while (*(cp + i++) != 0);
 //}
 
-// Æ÷ÀÎÅÍ À§Ä¡ Å×½ºÆ®...
+// í¬ì¸í„° ìœ„ì¹˜ í…ŒìŠ¤íŠ¸...
 //#include <stdio.h>
 //void main() {
 //	char s[] = "SCIENCE";
@@ -506,7 +506,7 @@
 //	printf("%x\n", p_b);
 //}
 
-// Æ÷ÀÎÅÍ¸¦ ÀÌ¿ëÇÑ 1Â÷¿ø ¹è¿­ÀÇ ÂüÁ¶ ¿¹
+// í¬ì¸í„°ë¥¼ ì´ìš©í•œ 1ì°¨ì› ë°°ì—´ì˜ ì°¸ì¡° ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	static int a[] = { 10, 20, 30, 40, 50 };
@@ -519,19 +519,19 @@
 //	printf("b=%d, c=%d, d=%d", b, c, d);
 //}
 
-// Æ÷ÀÎÅÍ¸¦ ÀÌ¿ëÇÑ 2Â÷¿ø ¹è¿­ÀÇ ÂüÁ¶ ¿¹
+// í¬ì¸í„°ë¥¼ ì´ìš©í•œ 2ì°¨ì› ë°°ì—´ì˜ ì°¸ì¡° ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	static a[3][3] = { {1,2,3}, {4,5,6}, {7,8,-9} };
 //	int* pt;
-//	pt = a[0]; // pt=a ¶Ç´Â pt=&a[0][0]°ú µ¿ÀÏ
+//	pt = a[0]; // pt=a ë˜ëŠ” pt=&a[0][0]ê³¼ ë™ì¼
 //	while (*pt != -9) {
 //		printf("%d", *pt);
 //		pt++;
 //	}
 //}
 
-// Æ÷ÀÎÅÍ¿Í ¹è¿­ÀÇ È£È¯ ¿¹
+// í¬ì¸í„°ì™€ ë°°ì—´ì˜ í˜¸í™˜ ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	char A[] = "ARRAY";
@@ -547,7 +547,7 @@
 //		printf("p[%d] : %c\n", i, p[i]);
 //}
 
-// Æ÷ÀÎÅÍ ¹è¿­ÀÇ »ç¿ë ¿¹
+// í¬ì¸í„° ë°°ì—´ì˜ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //void main() {
 //	int a[] = { 1,2,3,4 };
@@ -561,7 +561,7 @@
 //	printf("*PA[1]+15 = %d\n", *PA[1] + 15);
 //}
 
-// ÀÌÁß Æ÷ÀÎÅÍ
+// ì´ì¤‘ í¬ì¸í„°
 //#include <stdio.h>
 //void main() {
 //	char a = 'A', * p, ** pp;
@@ -572,9 +572,9 @@
 
 
 
-// 10°­ ±¸Á¶Ã¼¿Í °ø¿ëÃ¼ 1
+// 10ê°• êµ¬ì¡°ì²´ì™€ ê³µìš©ì²´ 1
 
-// ±¸Á¶Ã¼ Á¤ÀÇ¿Í º¯¼ö ¼±¾ğ ¿¹ 1
+// êµ¬ì¡°ì²´ ì •ì˜ì™€ ë³€ìˆ˜ ì„ ì–¸ ì˜ˆ 1
 //#include <stdio.h>
 //void main() {
 //	struct score {
@@ -584,11 +584,11 @@
 //		int eng;
 //		int math;
 //		int hist;
-//	}; // while µÚ¿¡´Â °ıÈ£ µÚ¿¡ ; ¾È ºÙ´Âµ¥...
+//	}; // while ë’¤ì—ëŠ” ê´„í˜¸ ë’¤ì— ; ì•ˆ ë¶™ëŠ”ë°...
 //	struct score X, Y;
 //}
 
-// ±¸Á¶Ã¼ Á¤ÀÇ¿Í º¯¼ö ¼±¾ğ ¿¹ 2
+// êµ¬ì¡°ì²´ ì •ì˜ì™€ ë³€ìˆ˜ ì„ ì–¸ ì˜ˆ 2
 //#include <stdio.h>
 //void main() {
 //	struct score {
@@ -601,7 +601,7 @@
 //	} X, Y;
 //}
 
-// ±¸Á¶Ã¼ Á¤ÀÇ¿Í º¯¼ö ¼±¾ğ ¿¹ 3
+// êµ¬ì¡°ì²´ ì •ì˜ì™€ ë³€ìˆ˜ ì„ ì–¸ ì˜ˆ 3
 //#include <stdio.h>
 //void main() {
 //	typedef struct score {
@@ -611,22 +611,22 @@
 //		int eng;
 //		int math;
 //		int hist;
-//	} jumsu;// struct score¸¦ jumsu¶ó´Â »õ·Î¿î ÀÚ·áÇüÀ¸·Î Á¤ÀÇ
-//	jumsu X, Y; // ÀÚ·áÇü jumsuÀÇ º¯¼ö X, Y¸¦ ¼±¾ğ
+//	} jumsu;// struct scoreë¥¼ jumsuë¼ëŠ” ìƒˆë¡œìš´ ìë£Œí˜•ìœ¼ë¡œ ì •ì˜
+//	jumsu X, Y; // ìë£Œí˜• jumsuì˜ ë³€ìˆ˜ X, Yë¥¼ ì„ ì–¸
 //}
 
-// ±¸Á¶Ã¼ º¯¼öÀÇ ÃÊ±âÈ­
+// êµ¬ì¡°ì²´ ë³€ìˆ˜ì˜ ì´ˆê¸°í™”
 //#include <stdio.h>
 //void main() {
 //	struct person {
 //		char name[8];
 //		int age;
 //		char sex;
-//	} X = { "È«±æµ¿", 20, 'M' };
-//	// struct person X = { "È«±æµ¿", 20, 'M' };
+//	} X = { "í™ê¸¸ë™", 20, 'M' };
+//	// struct person X = { "í™ê¸¸ë™", 20, 'M' };
 //}
 
-//// ±¸Á¶Ã¼ ¸â¹öÀÇ ÂüÁ¶ ¿¹ 1
+//// êµ¬ì¡°ì²´ ë©¤ë²„ì˜ ì°¸ì¡° ì˜ˆ 1
 //#include <stdio.h>
 //#include <string.h>
 //struct person {
@@ -635,20 +635,195 @@
 //	char sex;
 //};
 //void main() {
-//	struct person X = { "È«±æµ¿", 30, 'M' };
+//	struct person X = { "í™ê¸¸ë™", 30, 'M' };
 //	struct person Y;
-//	strcpy(Y.name, "ÀÓ²©Á¤");
+//	strcpy(Y.name, "ì„êº½ì •");
 //	Y.age = 35;
 //	Y.sex = 'M';
-//	printf("XÀÇ Á¤º¸ : %s, %d, %c\n", X.name, X.age, X.sex);
-//	printf("YÀÇ Á¤º¸ : %s, %d, %c\n", Y.name, Y.age, Y.sex);
+//	printf("Xì˜ ì •ë³´ : %s, %d, %c\n", X.name, X.age, X.sex);
+//	printf("Yì˜ ì •ë³´ : %s, %d, %c\n", Y.name, Y.age, Y.sex);
 //}
 
 
 
-// 13°­ ÆÄÀÏ Ã³¸® ÇÔ¼ö 1
+// êµ¬ì¡°ì²´ ë©¤ë²„ì˜ ì°¸ì¡° ì˜ˆ 2
+//#include <stdio.h>
+//#include <string.h>
+//struct person {
+//	char name[8];
+//	int age;
+//	char sex;
+//};
+//void main() {
+//	struct person X = { "í™ê¸¸ë™", 30, 'M' };
+//	printf("sizeof(person.name) : %dbyte\n", sizeof(X.name)); //1char * 8 = 8ë°”ì´íŠ¸
+//	printf("sizeof(person.age) : %dbyte\n", sizeof(X.age)); // int 4ë°”ì´íŠ¸
+//	printf("sizeof(person.sex) : %dbyte\n", sizeof(X.sex)); // 1char 1ë°”ì´íŠ¸
+//	printf("sizeof(person) : %dbyte \n", sizeof(X)); // 8+4+4ë°”ì´íŠ¸ -> ê°€ì¥ í° ìë£Œí˜•ì˜ ì‚¬ì´ì¦ˆ(int,4byte)ê°€ ìµœì†Œ í¬ê¸°ë¡œ ë°”ë€œ
+//}
 
-// ÆÄÀÏ ÀÔ·Â ¿¹½Ã
+// êµ¬ì¡°ì²´ ë°°ì—´ì˜ ì‚¬ìš© ì˜ˆ
+//#include <stdio.h>
+//void main() {
+//	struct person {
+//		char* name;
+//		int age;
+//		char sex;
+//	};
+//	struct person X[3] = {
+//		{"í™ê¸¸ë™", 20, 'M'},
+//		{"í™©ì§„ì´", 22, 'F'},
+//		{"ì„êº½ì •", 30, 'M'} };
+//	int i, sum = 0;
+//	for (i = 0; i < 3; i++) {
+//		printf("ì´ë¦„ : %s ë‚˜ì´ : %d ì„±ë³„ : %c\n",
+//			X[i].name, X[i].age, X[i].sex);
+//		sum = sum + X[i].age;
+//
+//	}
+//	printf("ë‚˜ì´ í•© = %d", sum);
+//}
+
+
+// êµ¬ì¡°ì²´ í¬ì¸í„°
+//#include <stdio.h>
+//struct student {
+//	char name[10];
+//	int kor;
+//	int math;
+//};
+//void main() {
+//	struct student hs[4] = {
+//		{ "KIM HG", 90, 95 },
+//		{"LEE SY", 85, 90},
+//		{"PARK GS", 70, 85},
+//		{"CHOI HJ", 95, 75} };
+//	struct student* p;
+//	p = hs;
+//	printf("%s %d %d\n", p->name, p->kor, p->math);
+//	p += 3;
+//	printf("%s %d %d\n", p->name, p->kor, p->math);
+//	p--;
+//	printf("%s %d %d\n", p->name, p->kor, p->math);
+//}
+
+
+// 12ê°• êµ¬ì¡°ì²´ì™€ ê³µìš©ì²´
+
+// êµ¬ì¡°ì²´ë¥¼ í•¨ìˆ˜ì˜ ë§¤ê°œë³€ìˆ˜ë¡œ ì‚¬ìš© ì˜ˆ
+//#include <stdio.h>
+////struct num calc(struct num);
+//struct num {
+//	int x;
+//	int y;
+//	int sum;
+//	int mul;
+//};
+//
+//struct num calc(struct num number2) {
+//	number2.sum = number2.x + number2.y;
+//	number2.mul = number2.x * number2.y;
+//	return(number2);
+//}
+//void main() {
+//	struct num number1;
+//	number1.x = 10;
+//	number1.y = 20;
+//	number1 = calc(number1);
+//	printf("x:%d, y:%d, sum:%d, mul:%d\n",
+//		number1.x, number1.y, number1.sum, number1.mul);
+//	//getchar();
+//}
+
+
+// êµ¬ì¡°ì²´ í¬ì¸í„°ë¥¼ í•¨ìˆ˜ì˜ ë§¤ê°œë³€ìˆ˜ë¡œ ì‚¬ìš© ì˜ˆ
+//#include <stdio.h>
+//struct num calc(struct num *);
+//struct num {
+//	int x;
+//	int y;
+//	int sum;
+//	int mul;
+//};
+//
+//
+//void main() {
+//	struct num number1;
+//	number1.x = 10;
+//	number1.y = 20;
+//	calc(&number1);
+//	printf("x:%d, y:%d, sum:%d, mul:%d\n",
+//		number1.x, number1.y, number1.sum, number1.mul);
+//}
+//
+//struct num calc(struct num *number2) {
+//	number2->sum = number2->x + number2->y;
+//	number2->mul = number2->x * number2->y;
+//}
+
+
+// typedefì˜ ì‚¬ìš© ì˜ˆ 1
+//#include <stdio.h>
+//struct data {
+//	int x;
+//	int y;
+//};
+//typedef struct data DATA;
+//
+////typedef struct data {
+////	int x;
+////	int y;
+////} DATA; // ê°™ì€ ë‚´ìš©
+//
+//void main() {
+//	DATA d = { 1,2 };
+//	printf("d.x = %d, d.y = %d\n", d.x, d.y);
+//}
+
+
+// typedefì˜ ì‚¬ìš© ì˜ˆ 2
+//#include <stdio.h>
+//#include <string.h>
+//struct person {
+//	char name[20];
+//	char sex;
+//	int age;
+//};
+//
+//typedef struct person MAN;
+//typedef unsigned char CHAR;
+//typedef int* PTR;
+//void main() {
+//	MAN member;
+//	CHAR data;
+//	PTR pt;
+//	strcpy(member.name, "í™ê¸¸ë™");
+//	member.sex = 'M';
+//	member.age = 30;
+//	data = 100;
+//	pt = &(member.age);
+//	printf("*pt=%d\n", *pt);
+//}
+
+
+// êµ¬ì¡°ì²´ ë¹„íŠ¸í•„ë“œì˜ ì‚¬ìš© ì˜ˆ
+//#include <stdio.h>
+//void main() {
+//	struct test {
+//		unsigned a : 5;
+//		unsigned b : 6;
+//		unsigned c : 6;
+//		unsigned d : 4;
+//	};
+//	struct test v = { 1,2,3,4 };
+//	printf("v.a = %d v.b = %d, v.c = %d, v.d = %d\n")
+//}
+
+
+
+// 13ê°• íŒŒì¼ ì²˜ë¦¬ í•¨ìˆ˜ 1
+
+// íŒŒì¼ ì…ë ¥ ì˜ˆì‹œ
 //#include <stdio.h>
 //#pragma warning(disable:4996)
 //
@@ -662,7 +837,7 @@
 //}
 
 
-// ÆÄÀÏ ¿­±â/´İ±â »ç¿ë ¿¹
+// íŒŒì¼ ì—´ê¸°/ë‹«ê¸° ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //#pragma warning(disable:4996)
 //void main() {
@@ -670,7 +845,7 @@
 //	fp1 = fopen("c:\\users\\kay\\documents\\text.txt", "w");
 //	fp2 = fopen("c:\\source\\test.c", "r");
 //	if ((fp2 = fopen("C:\\source\\test.c", "r")) == NULL) {
-//		puts("ÆÄÀÏÀ» ¿­ ¼ö ¾øÀ½!");
+//		puts("íŒŒì¼ì„ ì—´ ìˆ˜ ì—†ìŒ!");
 //		exit(1);
 //	}
 //	fclose(fp1);
@@ -678,8 +853,8 @@
 //}
 
 
-// 14°­ ÆÄÀÏ Ã³¸® ÇÔ¼ö 2
-// ¼øÂ÷ÆÄÀÏ - putc() ÇÔ¼öÀÇ »ç¿ë ¿¹
+// 14ê°• íŒŒì¼ ì²˜ë¦¬ í•¨ìˆ˜ 2
+// ìˆœì°¨íŒŒì¼ - putc() í•¨ìˆ˜ì˜ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //#include <stdlib.h>
 //#pragma warning(disable:4996)
@@ -689,7 +864,7 @@
 //	char c;
 //	fp = fopen("sample1.dat", "w");
 //	if (fp == NULL) {
-//		printf("ÆÄÀÏÀ» °³¹æÇÒ ¼ö ¾ø½À´Ï´Ù!");
+//		printf("íŒŒì¼ì„ ê°œë°©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!");
 //		exit(1);
 //	}
 //	while ((c = getchar()) != EOF)  //EOF = Ctrl+Z
@@ -698,7 +873,7 @@
 //}
 
 
-// fput() ÇÔ¼öÀÇ »ç¿ë ¿¹
+// fput() í•¨ìˆ˜ì˜ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
@@ -708,20 +883,20 @@
 //	char name[64];
 //	FILE* fp;
 //	if ((fp = fopen("sample2.dat", "w")) == NULL) {
-//		puts("ÆÄÀÏÀ» °³¹æÇÒ ¼ö ¾ø½À´Ï´Ù!");
+//		puts("íŒŒì¼ì„ ê°œë°©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!");
 //		exit(1);
 //	}
 //	gets(name);
-//	while (strcmp(name, "end")) { //strcmp µÎ ¹®ÀÚ¿­ ºñ±³
-//		strcat(name, "\n"); //ÇÏ³ªÀÇ ¹®ÀÚ¿­ ±æÀÌ°¡ ÀÏÁ¤ÇÏÁö ¾ÊÀ¸¹Ç·Î ±¸ºĞ ¸ñÀûÀ¸·Î \n Ãß°¡
-//							//strcat µÎ ¹®ÀÚ¿­ ºÙÀÌ±â
+//	while (strcmp(name, "end")) { //strcmp ë‘ ë¬¸ìì—´ ë¹„êµ
+//		strcat(name, "\n"); //í•˜ë‚˜ì˜ ë¬¸ìì—´ ê¸¸ì´ê°€ ì¼ì •í•˜ì§€ ì•Šìœ¼ë¯€ë¡œ êµ¬ë¶„ ëª©ì ìœ¼ë¡œ \n ì¶”ê°€
+//							//strcat ë‘ ë¬¸ìì—´ ë¶™ì´ê¸°
 //		fputs(name, fp);
 //		gets(name);
 //	}
 //	fclose(fp);
 //}
 
-//fprintf() ÇÔ¼ö
+//fprintf() í•¨ìˆ˜
 //#include <stdio.h>
 //#include <stdlib.h>
 //#pragma warning(disable:4996)
@@ -732,18 +907,18 @@
 //	int mid, term, rep, att, i;
 //	fp = fopen("sample3.dat", "w");
 //	if (fp == NULL) {
-//		printf("ÆÄÀÏÀ» °³¹æÇÒ ¼ö ¾ø½À´Ï´Ù!");
+//		printf("íŒŒì¼ì„ ê°œë°©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!");
 //		exit(1);
 //	}
-//	fprintf(stdout, "ÇĞ¹ø ÀÌ¸§ Áß°£ ±â¸» ·¹Æ÷Æ® Ãâ¼® Á¡¼ö¸¦ ÀÔ·Â\n");
+//	fprintf(stdout, "í•™ë²ˆ ì´ë¦„ ì¤‘ê°„ ê¸°ë§ ë ˆí¬íŠ¸ ì¶œì„ ì ìˆ˜ë¥¼ ì…ë ¥\n");
 //	for (i = 0; i < 5; ++i) {
 //		scanf("%s %s %d %d %d %d", no, name, &mid, &term, &rep, &att);
 //		fprintf(fp,"%10s %8s %3d %3d %3d %3d \n", no, name, mid, term, rep, att);
-//	} //ÁöÁ¤µÈ Çü½ÄÀ¸·Î ÆÄÀÏ¿¡ ÀÚ·á¸¦ ÀúÀå
+//	} //ì§€ì •ëœ í˜•ì‹ìœ¼ë¡œ íŒŒì¼ì— ìë£Œë¥¼ ì €ì¥
 //	fclose(fp);
 //}
 
-// getc() ÇÔ¼ö
+// getc() í•¨ìˆ˜
 //#include <stdio.h>
 //#include <stdlib.h>
 //#pragma warning(disable:4996)
@@ -752,7 +927,7 @@
 //	char c;
 //	fp = fopen("sample1.dat", "r");
 //	if (fp == NULL) {
-//		printf("ÆÄÀÏÀ» °³¹æÇÒ ¼ö ¾ø½À´Ï´Ù!");
+//		printf("íŒŒì¼ì„ ê°œë°©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!");
 //		exit(1);
 //	}
 //	while ((c = getc(fp)) != EOF)
@@ -760,7 +935,7 @@
 //	fclose(fp);
 //}
 
-// fgets()ÇÔ¼ö - ¹®ÀÚ¿­ ±æÀÌ ¸í½Ã ÇØ¾ßÇÔ(null°ª Æ÷ÇÔÇÏ¿© +1)
+// fgets()í•¨ìˆ˜ - ë¬¸ìì—´ ê¸¸ì´ ëª…ì‹œ í•´ì•¼í•¨(nullê°’ í¬í•¨í•˜ì—¬ +1)
 //#include <stdio.h>
 //#include <stdlib.h>
 //#pragma warning(disable:4996)
@@ -768,7 +943,7 @@
 //	char name[20];
 //	FILE* fp;
 //	if ((fp = fopen("sample2.dat", "r")) == NULL) {
-//		puts("ÆÄÀÏÀ» °³¹æÇÒ ¼ö ¾ø½À´Ï´Ù!");
+//		puts("íŒŒì¼ì„ ê°œë°©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!");
 //		exit(1);
 //	}
 //	while (fgets(name, 20, fp) != NULL)
@@ -776,7 +951,7 @@
 //	fclose(fp);
 //}
 
-// fscanf()ÇÔ¼ö - ÁÖ·Î ÆÄÀÏÀÇ ³¡À» ÆÇº°ÇÏ´Â feof() ÇÔ¼ö¿Í ÇÔ²² »ç¿ë
+// fscanf()í•¨ìˆ˜ - ì£¼ë¡œ íŒŒì¼ì˜ ëì„ íŒë³„í•˜ëŠ” feof() í•¨ìˆ˜ì™€ í•¨ê»˜ ì‚¬ìš©
 //#include <stdio.h>
 //#include <stdlib.h>
 //#pragma warning(disable:4996)
@@ -786,10 +961,10 @@
 //	int mid, term, rep, att;
 //	fp = fopen("sample3.dat", "r");
 //	if (fp == NULL) {
-//		printf("ÆÄÀÏÀ» °³¹æÇÒ ¼ö ¾ø½À´Ï´Ù.");
+//		printf("íŒŒì¼ì„ ê°œë°©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 //		exit(1);
 //	}
-//	printf("ÇĞ¹ø ÀÌ¸§ Áß°£ ±â¸» ¸®Æ÷Æ® Ãâ¼®\n");
+//	printf("í•™ë²ˆ ì´ë¦„ ì¤‘ê°„ ê¸°ë§ ë¦¬í¬íŠ¸ ì¶œì„\n");
 //	while (!feof(fp)) {
 //		fscanf(fp, "%10s %8s %3d %3d %3d %3d\n",
 //			no, name, &mid, &term, &rep, &att);
@@ -799,7 +974,7 @@
 //}
 
 
-// ·¹ÄÚµå Ãß°¡ÀÇ »ç¿ë ¿¹
+// ë ˆì½”ë“œ ì¶”ê°€ì˜ ì‚¬ìš© ì˜ˆ
 //#include <stdio.h>
 //#pragma warning(disable:4996)
 //void main() {
@@ -811,9 +986,9 @@
 //	fclose(fp);
 //}
 
-// ¼øÂ÷ÆÄÀÏ ³¡ ~ ·£´ıÆÄÀÏ ½ÃÀÛ
+// ìˆœì°¨íŒŒì¼ ë ~ ëœë¤íŒŒì¼ ì‹œì‘
 
-// fwrite() ÇÔ¼ö
+// fwrite() í•¨ìˆ˜
 /*#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -822,7 +997,7 @@ void main() {
 	FILE* fp;
 	char name[10];
 	if((fp = fopen("sample5.dat", "wb")) == NULL) {
-		puts("ÆÄÀÏÀ» °³¹æÇÒ ¼ö ¾ø½À´Ï´Ù!");
+		puts("íŒŒì¼ì„ ê°œë°©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!");
 		exit(1);
 	}
 	gets(name);
@@ -833,7 +1008,7 @@ void main() {
 	fclose(fp);
 }*/
 
-// fread() ÇÔ¼ö
+// fread() í•¨ìˆ˜
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
@@ -842,37 +1017,37 @@ void main() {
 //	FILE* fp;
 //	char name[10];
 //	if ((fp = fopen("sample5.dat", "rb")) == NULL) {
-//		puts("ÆÄÀÏÀ» °³¹æÇÒ ¼ö ¾ø½À´Ï´Ù!");
+//		puts("íŒŒì¼ì„ ê°œë°©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!");
 //		exit(1);
 //	}
 //	while (1) {
-//		if (fread(name, 10, 1, fp) != 1) //fread(ÀĞÀ» ÀÚ·á º¯¼ö, ·¹ÄÚµå ±æÀÌ, ·¹ÄÚµå °³¼ö, ÆÄÀÏ Æ÷ÀÎÅÍ)
+//		if (fread(name, 10, 1, fp) != 1) //fread(ì½ì„ ìë£Œ ë³€ìˆ˜, ë ˆì½”ë“œ ê¸¸ì´, ë ˆì½”ë“œ ê°œìˆ˜, íŒŒì¼ í¬ì¸í„°)
 //				break;
 //		puts(name);
 //	}
 //	fclose(fp);
 //}
 
-// fseek() ÇÔ¼ö - ÆÄÀÏ Æ÷ÀÎÅÍ¸¦ ÀÓÀÇÀÇ À§Ä¡·Î ÀÌµ¿½ÃÅ°°í, ·£´ıÆÄÀÏÀÇ Æ¯Á¤ ºÎºĞÀ» ÀÔ/Ãâ·Â
+// fseek() í•¨ìˆ˜ - íŒŒì¼ í¬ì¸í„°ë¥¼ ì„ì˜ì˜ ìœ„ì¹˜ë¡œ ì´ë™ì‹œí‚¤ê³ , ëœë¤íŒŒì¼ì˜ íŠ¹ì • ë¶€ë¶„ì„ ì…/ì¶œë ¥
 //#include <stdio.h>
 //#include <stdlib.h>
 //#pragma warning(disable:4996)
-////SEEK_CUR Æ¯Á¤ À§Ä¡·Î ÀÌµ¿ , SEEK_SET ±âº» À§Ä¡ ¼ÂÆÃ, SEEK_END ÆÄÀÏÀÇ ¸¶Áö¸· ³¡ ±âÁØ
+////SEEK_CUR íŠ¹ì • ìœ„ì¹˜ë¡œ ì´ë™ , SEEK_SET ê¸°ë³¸ ìœ„ì¹˜ ì…‹íŒ…, SEEK_END íŒŒì¼ì˜ ë§ˆì§€ë§‰ ë ê¸°ì¤€
 //void main() {
 //	char str[10];
 //	FILE* fp = fopen("sample6.txt", "wt");
 //	fputs("1234567890", fp);
 //	fclose(fp);
 //	fp = fopen("sample6.txt", "rt");
-//	fseek(fp, 7, SEEK_SET); //ÆÄÀÏÀÇ ½ÃÀÛ À§Ä¡¸¦ ½ÃÀÛ(1) ¿¡¼­ 7¸¸Å­ ÀÌµ¿ÇÑ À§Ä¡(8)·Î ¼ÂÆÃ
-//	fgets(str, 4, fp); //8ºÎÅÍ 3±ÛÀÚ Ãâ·Â(nullÆ÷ÇÔ ½Ã 4±ÛÀÚ), Ãâ·Â ÀÌÈÄ Ä¿¼­´Â ³¡¿¡ ³²À½
-//	printf("7¹øÂ°ºÎÅÍ 3±ÛÀÚ Ãâ·Â : %s \n", str); //890 Ãâ·Â
-//	fseek(fp, -2, SEEK_CUR); // Ä¿¼­ À§Ä¡ ¾ÕÀ¸·Î 2Ä­ ¿Å±è(0µÚ->8µÚ(9))
-//	fgets(str, 3, fp); // 9¿¡¼­ 2±ÛÀÚ Ãâ·Â
-//	printf("ÇöÀç À§Ä¡¿¡¼­ ¾Õ¿¡ 2±ÛÀÚºÎÅÍ 2±ÛÀÚ Ãâ·Â : %s \n", str); //90 Ãâ·Â
-//	fseek(fp, -9, SEEK_END); // ¸Ç µÚ ±âÁØ ¾ÕÀ¸·Î 9Ä­ ÀÌµ¿(0µÚ -> 1µÚ)
-//	fgets(str, 6, fp); // 1µÚ(2)ºÎÅÍ 5±ÛÀÚ Ãâ·Â
-//	printf("¸Ç µÚ¿¡¼­ 9¹øÂ° ¾ÕºÎÅÍ 5±ÛÀÚ Ãâ·Â : %s \n", str); // 23456 Ãâ·Â
+//	fseek(fp, 7, SEEK_SET); //íŒŒì¼ì˜ ì‹œì‘ ìœ„ì¹˜ë¥¼ ì‹œì‘(1) ì—ì„œ 7ë§Œí¼ ì´ë™í•œ ìœ„ì¹˜(8)ë¡œ ì…‹íŒ…
+//	fgets(str, 4, fp); //8ë¶€í„° 3ê¸€ì ì¶œë ¥(nullí¬í•¨ ì‹œ 4ê¸€ì), ì¶œë ¥ ì´í›„ ì»¤ì„œëŠ” ëì— ë‚¨ìŒ
+//	printf("7ë²ˆì§¸ë¶€í„° 3ê¸€ì ì¶œë ¥ : %s \n", str); //890 ì¶œë ¥
+//	fseek(fp, -2, SEEK_CUR); // ì»¤ì„œ ìœ„ì¹˜ ì•ìœ¼ë¡œ 2ì¹¸ ì˜®ê¹€(0ë’¤->8ë’¤(9))
+//	fgets(str, 3, fp); // 9ì—ì„œ 2ê¸€ì ì¶œë ¥
+//	printf("í˜„ì¬ ìœ„ì¹˜ì—ì„œ ì•ì— 2ê¸€ìë¶€í„° 2ê¸€ì ì¶œë ¥ : %s \n", str); //90 ì¶œë ¥
+//	fseek(fp, -9, SEEK_END); // ë§¨ ë’¤ ê¸°ì¤€ ì•ìœ¼ë¡œ 9ì¹¸ ì´ë™(0ë’¤ -> 1ë’¤)
+//	fgets(str, 6, fp); // 1ë’¤(2)ë¶€í„° 5ê¸€ì ì¶œë ¥
+//	printf("ë§¨ ë’¤ì—ì„œ 9ë²ˆì§¸ ì•ë¶€í„° 5ê¸€ì ì¶œë ¥ : %s \n", str); // 23456 ì¶œë ¥
 //	fclose(fp);
 //}
 
